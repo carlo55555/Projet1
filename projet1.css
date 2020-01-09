@@ -234,9 +234,22 @@ strong
 	padding: 60%;
     border: solid 2px #E9E9E9;
     border-radius: 100%;
+    position: relative;
 }
 
 #point
+{
+	background-color: #5CADD3;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    padding: 5px;
+    position: absolute;
+    top: 51%;
+    right: 13%;
+}
+
+#point3
 {
 	background-color: #5CADD3;
     width: 1px;
@@ -621,6 +634,11 @@ h1
 		position: unset;
 	}
 
+	header nav a:hover
+	{
+		border: none;
+	}
+
 	#bloc_page
 	{
 		width: auto;
@@ -667,8 +685,15 @@ h1
 	#point
 	{
 		padding: 4px;
-		top: 27%;
-		right: 31%;
+		top: 28%;
+		right: 33%;
+	}
+
+	#point3
+	{
+		padding: 4px;
+		top: 33%;
+		right: 32.5%;
 	}
 
 	#point5
@@ -694,6 +719,38 @@ h1
 	}
 
 	.photo_portfolio
+	{
+		display: none;
+	}
+
+	#portfolio nav li
+	{
+		padding: 4.1%;
+	}
+
+	.liste_bis li:hover
+	{
+		background-color: #E5E5E5;
+		box-shadow: none;
+		width: 40%;
+	}
+
+	#portfolio li:hover .pointe_bleue1
+	{
+		display: none;
+	}
+
+	#portfolio li:hover .pointe_bleue2
+	{
+		display: none;
+	}
+
+	#portfolio li:hover .pointe_bleue3
+	{
+		display: none;
+	}
+
+	#portfolio li:hover .pointe_bleue4
 	{
 		display: none;
 	}
@@ -942,6 +999,13 @@ h1
 		top: 47%;
 	}
 
+	#point3
+	{
+		padding: 7px;
+		right: 39.9%;
+		top: 47%;
+	}
+
 	#point5
 	{
 		padding: 7px;
@@ -1045,18 +1109,29 @@ h1
 
 
 
-@media screen and (min-width: 640px) and (max-width: 1473px)
+@media screen and (min-width: 1229px) and (max-width: 1473px)
 {
 	#portfolio nav li
 	{
-		padding: 4.8%
+		padding: 4.6%
+	}
+
+	#portfolio nav ul
+	{
+		width: 32%
 	}
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1229px)
+@media screen and (min-width: 1024px) and (max-width: 1229px)
 {
+	#portfolio nav li
+	{
+		padding: 5.8%
+	}
+
 	#portfolio nav ul
 	{
-		width: 34%
+		width: 40%
 	}
 }
+
