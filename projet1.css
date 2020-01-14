@@ -216,28 +216,30 @@ strong
 	position: relative;
 }
 
-#design
+.div_aside
 {
-	display: flex;
+	margin-left: 100px;
 }
 
 #line
 {
-	padding-right: 10%;
-    padding-top: 5%;
     position: relative;
+    float: left;
+    color: #5CADD3;
+    border: solid 2px #E9E9E9;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 60px;
 }
 
 #icon
 {
-	color: #5CADD3;
-	padding: 60%;
-    border: solid 2px #E9E9E9;
-    border-radius: 100%;
-    position: relative;
+	line-height: 60px;
 }
 
-#point
+.point
 {
 	background-color: #5CADD3;
     width: 1px;
@@ -245,8 +247,8 @@ strong
     border-radius: 100%;
     padding: 5px;
     position: absolute;
-    top: 51%;
-    right: 13%;
+    top: 41%;
+    right: -10%;
 }
 
 #point3
@@ -306,7 +308,7 @@ h1
 #aside1
 {
 	font-size: 0.9em;
-    margin-left: 100px;
+	margin-left: 5%;
     text-align: justify;
     margin-right: 100px;
     margin-top: 70px;
@@ -374,25 +376,34 @@ h1
 	width: 800px;
 }
 
+#menu_secondaire
+{
+	margin: 0 auto;
+    display: flex;
+    width: 361px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+}
+
 #portfolio nav ul
 {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	width: 31%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background-color: #E5E5E5;
-	border-radius: 5px;
 	padding: 0;
-	position: relative;
+	line-height: 40px;
 }
 
 
 #portfolio nav li
 {
-    padding: 4.1%;
+    width: 90px;
+    text-align: center;
 }
 
 #portfolio a
@@ -682,26 +693,6 @@ h1
 		padding-top: unset;
 	}
 
-	#point
-	{
-		padding: 4px;
-		top: 28%;
-		right: 33%;
-	}
-
-	#point3
-	{
-		padding: 4px;
-		top: 33%;
-		right: 32.5%;
-	}
-
-	#point5
-	{
-		padding: 4px;
-		top: 28%;
-		right: 30%;
-	}
 
 
 	/*projet*/
@@ -710,7 +701,17 @@ h1
 
 	#portfolio nav ul
 	{
-		width: 40%;
+		width: 70%;
+	}
+
+	#menu_secondaire
+	{
+		width: 550px;
+	}
+
+	#portfolio a
+	{
+		font-size: 1.5em;
 	}
 
 	#image img
@@ -973,7 +974,7 @@ h1
 
 	#icon
 	{
-		padding: 5%;
+		padding: 25%;
 	}
 
 	#service1 h2
@@ -992,30 +993,17 @@ h1
 		font-size: 0.4em;
 	}
 
-	#point
+	.point
 	{
 		padding: 7px;
-		right: 39.9%;
-		top: 47%;
-	}
-
-	#point3
-	{
-		padding: 7px;
-		right: 39.9%;
-		top: 47%;
-	}
-
-	#point5
-	{
-		padding: 7px;
-		top: 47%;
-		right: 39.6%;
+		right: -6%;
+		top: 45%;
 	}
 
 	.div_aside
 	{
 		padding-left: 2%;
+		margin-left: unset;
 	}
 
 	#design
@@ -1028,6 +1016,10 @@ h1
 	{
 		padding: unset;
 		margin-top: 10%;
+		height: 125px;
+		width: 125px;
+		margin-left: 43%;
+		float: unset;
 	}
 
 
@@ -1043,14 +1035,9 @@ h1
 		border-top: solid gray 4px;
 	}
 
-	#portfolio nav ul
+	#menu_secondaire
 	{
-		width: 85%;
-	}
-
-	#portfolio nav a
-	{
-		font-size: 2em;
+		display: none;
 	}
 
 	.photo_avec_bandeaux:hover .bandeaux
@@ -1066,6 +1053,8 @@ h1
 	#premier
 	{
 		display: block;
+		margin-top: 5%;
+
 	}
 
 	#premier img
@@ -1106,32 +1095,4 @@ h1
 	}
 }
 
-
-
-
-@media screen and (min-width: 1229px) and (max-width: 1473px)
-{
-	#portfolio nav li
-	{
-		padding: 4.6%
-	}
-
-	#portfolio nav ul
-	{
-		width: 30%
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1229px)
-{
-	#portfolio nav li
-	{
-		padding: 5.8%
-	}
-
-	#portfolio nav ul
-	{
-		width: 40%
-	}
-}
 
