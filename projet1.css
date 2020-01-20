@@ -19,11 +19,19 @@ header
 	width: 100%;
 	background-color: white;
 	z-index: 1000;
+	box-shadow: 1px 1px 15px grey;
+
 }
 
 #hamburger, .menu_check
 {
 	display: none;
+}
+
+body
+{
+	margin: 0 auto;
+	font-family: Roboto-Medium;
 }
 
 
@@ -33,12 +41,6 @@ header
 
 
 
-
-body
-{
-	margin: 0 auto;
-	font-family: Roboto-Medium;
-}
 
 header nav ul
 {
