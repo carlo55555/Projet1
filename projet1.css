@@ -178,7 +178,29 @@ strong
     font-size: 0.8em;
 }
 
+#barre_slider
+{
+	position: relative;
+}
 
+#barre_noir
+{
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 4px;
+	opacity: 25%;
+	background-color: black;
+}
+
+#barre_bleu
+{
+	background-color: #6495ed;
+	height: 5px;
+	width: 10%;
+	position: absolute;
+	bottom: 4px;
+}
 
 
 
@@ -220,7 +242,7 @@ strong
 	position: relative;
 }
 
-.div_aside
+.div_texte
 {
 	margin-left: 100px;
 }
@@ -285,11 +307,10 @@ h1
 	margin-left: 100px;
 }
 
-#aside1
+#design1
 {
 	font-size: 0.9em;
 	margin-left: 5%;
-    text-align: justify;
     margin-right: 100px;
     margin-top: 70px;
 }
@@ -377,6 +398,7 @@ h1
 	margin: 0 auto;
 	padding: 0;
 	line-height: 40px;
+	cursor: pointer;
 }
 
 
@@ -386,7 +408,7 @@ h1
     text-align: center;
 }
 
-#portfolio a
+#portfolio ul li span
 {
 	text-decoration: none;
 	color: #64686D;
@@ -399,7 +421,7 @@ h1
 	box-shadow: #468CAD 0px 3px;
 }
 
-#portfolio li:hover a
+#portfolio li:hover span
 {
 	color: white;
 }
@@ -514,13 +536,12 @@ h1
 .eye
 {
 	position: absolute;
-	left: 29%;
+	left: 28%;
     top: 32%;
 }
 
 .bandeaux_texte p
 {
-	font-size: 2em;
 	margin-left: 5%;
     line-height: 45%;
 }
@@ -552,13 +573,13 @@ h1
 
 #carte
 {
-	width: 100%;
+	width: 99.7%;
 	margin-top: 7%;
 	height: 630px;
 
 }
 
-#aside2
+#contact2
 {
 	background-color: rgb(255,255,255,0.8);
 	position: absolute;
@@ -567,12 +588,12 @@ h1
 	padding: 2%;
 }
 
-#contact5
+#contact1
 {
 	position: relative;
 }
 
-#aside2 p
+#contact2 p
 {
 	line-height: 40%;
 }
@@ -587,7 +608,7 @@ h1
 	box-shadow: #4494BB 0px 3px;
 }
 
-#aside2 h1
+#contact2 h1
 {
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -610,9 +631,20 @@ h1
 	width: 95%;
 }
 
+em
+{
+	border-bottom: black 1px dotted;
+	font-style: normal;
+}
+
 #w3c
 {
 	display: none;
+}
+
+#filtre_bleue
+{
+	background-color: rgba(0,0,255,0.5);
 }
 
 
@@ -633,10 +665,6 @@ h1
 		box-shadow: none;
 	}
 
-	header nav a:hover
-	{
-		border: none;
-	}
 
 	#bloc_page
 	{
@@ -652,7 +680,7 @@ h1
 
 	#circle, #circle2
 	{
-		display: none;
+		top: 40%;
 	}
 
 	#texte_sur_slider
@@ -744,6 +772,26 @@ h1
 		display: none;
 	}
 
+	.bandeaux
+	{
+		padding-left: 31px;
+	}
+
+	.bandeaux_texte
+	{
+		bottom: 1%;
+	}
+
+	.cercle
+	{
+		right: 0;
+	}
+
+	.eye
+	{
+		left: 33%;
+	}
+
 
 
 	/*contact*/
@@ -754,7 +802,7 @@ h1
 		display: none;
 	}
 
-	#aside2
+	#contact2
 	{
 		text-align: center;
 		background-color: rgba(198, 199, 201, 0.89);
@@ -971,7 +1019,7 @@ h1
 		font-size: 1.3em;
 	}
 
-	#aside1
+	#design1
 	{
 		font-size: unset;
 		margin-top: unset;
@@ -989,7 +1037,7 @@ h1
 		top: 45%;
 	}
 
-	.div_aside
+	.div_texte
 	{
 		padding-left: 2%;
 		margin-left: unset;
@@ -1075,7 +1123,7 @@ h1
 		display: none;
 	}
 
-	#aside2
+	#contact2
 	{
 		font-size: 2.5em;
 		width: 70%;
