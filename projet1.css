@@ -535,8 +535,8 @@ h1
 .eye
 {
 	position: absolute;
-	left: 28%;
-    top: 32%;
+	left: 26%;
+    top: 28%;
 }
 
 .bandeaux_texte p
@@ -649,6 +649,18 @@ em
 }
 
 
+/*media query intermédiaire*/
+
+
+@media screen and (max-width: 1080px) and (min-width: 1024px)
+{
+ 	.bandeaux_texte
+ 	{
+ 		font-size: 0.5em;
+ 	}
+}
+
+
 
 /*responsive tablette*/
 
@@ -722,10 +734,50 @@ em
 
 
 
+	#premier, #second
+	{
+		display: unset;
+		padding: 5px;
+	}
+
+	.photo_avec_bandeaux
+	{
+		height: unset;
+		padding: 15px;
+		font-size: 1.3em;
+	}
+
+	.bandeaux_texte
+	{
+		width: 93.5%;
+		bottom: 6%;
+	}
+
+	.bandeaux_texte p
+	{
+		line-height: 80%;
+	}
+
+	.cercle
+	{
+		right: 10%;
+		bottom: 32%;
+	}
+
+	.eye
+	{
+		left: 27%;
+		top: 29%;
+	}
+
+	#image
+	{
+		display: flex;
+	}
 
 	#portfolio span
 	{
-		font-size: 1.5em;
+		font-size: 1.1em;
 	}
 
 	#portfolio nav li
@@ -735,7 +787,7 @@ em
 
 	#menu_secondaire
 	{
-		width: 504px;
+		width: 502px;
 	}
 
 	#portfolio nav ul
@@ -903,7 +955,7 @@ em
 
 	#circle, #circle2
 	{
-		top: 50%
+		top: 20%
 	}
 
 	#texte_sur_slider
@@ -913,7 +965,7 @@ em
 		font-size: 1em;
 		text-align: center;
 		color: #64686D;
-		margin-top: 10%;
+		margin-top: 5%;
 	}
 
 	#p1
@@ -921,6 +973,15 @@ em
 		font-size: 1.2em;
 	}
 
+	#barre_noir
+	{
+		bottom: 3%;
+	}
+
+	#barre_bleu
+	{
+		bottom: 3%;
+	}
 
 
 
@@ -1028,7 +1089,7 @@ em
 
 	.photo_avec_bandeaux:hover .bandeaux
 	{
-		display: none;
+		display:;
 	}
 
 	#portfolio nav ul
@@ -1050,18 +1111,20 @@ em
 	{
 		display: block;
 		margin-top: 5%;
-
+		width: 85%;
+		margin: auto;
 	}
 
-	#premier img
+	.bandeaux_texte
 	{
-		max-width: 50%;
-		height: auto;
+		bottom: 3.5%;
+		width: 96.5%;
+		font-size: 1.2em;
 	}
 
-	#image img
+	.cercle
 	{
-		padding-left: 25%;
+		font-size: 1.5em;
 	}
 
 
