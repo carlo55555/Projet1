@@ -329,7 +329,6 @@ h1
 #premier, #second
 {
 	display: flex;
-	margin-bottom: 35px;
 }
 
 #trait2
@@ -379,7 +378,7 @@ h1
 
 #menu_secondaire
 {
-	margin: 0 auto;
+	margin: auto;
     display: flex;
     width: 361px;
     margin-top: 50px;
@@ -542,7 +541,8 @@ h1
 
 .bandeaux_texte p
 {
-	margin-left: 5%;
+	font-size: 1.6em;
+    margin-left: 5%;
     line-height: 45%;
 }
 
@@ -573,17 +573,24 @@ h1
 
 #carte
 {
-	width: 99.7%;
-	margin-top: 7%;
+	width: 100%;
 	height: 630px;
+	opacity: 0.6;
+	border: none;
+}
 
+#filtre_bleue
+{
+	background-color: rgba(51, 133, 255, 0.4);
+	margin-top: 7%;
+    height: 630px;
 }
 
 #contact2
 {
 	background-color: rgb(255,255,255,0.8);
 	position: absolute;
-	top: 21%;
+	top: 8%;
 	right: 10%;
 	padding: 2%;
 }
@@ -621,7 +628,6 @@ h1
 
 #name, #mail, #subject, #message, #send
 {
-	margin-bottom: 5%;
 	padding: 2%;
 	border-radius: 5px;
 }
@@ -642,10 +648,6 @@ em
 	display: none;
 }
 
-#filtre_bleue
-{
-	background-color: rgba(0,0,255,0.5);
-}
 
 
 /*responsive tablette*/
@@ -689,6 +691,11 @@ em
 		left: 11%;
 	}
 
+	#barre_bleu
+	{
+		bottom: 5px;
+	}
+
 
 	/*service*/
 
@@ -715,81 +722,25 @@ em
 
 
 
-	#portfolio nav ul
-	{
-		width: 70%;
-	}
 
-	#menu_secondaire
-	{
-		width: 550px;
-	}
-
-	#portfolio a
+	#portfolio span
 	{
 		font-size: 1.5em;
 	}
 
-	#image img
-	{
-		padding-left: 7%;
-	}
-
-	.photo_portfolio
-	{
-		display: none;
-	}
-
 	#portfolio nav li
 	{
-		padding: 4.1%;
+		width: 125px;
 	}
 
-	.liste_bis li:hover
+	#menu_secondaire
 	{
-		background-color: #E5E5E5;
-		box-shadow: none;
-		width: 40%;
+		width: 504px;
 	}
 
-	#portfolio li:hover .pointe_bleue1
+	#portfolio nav ul
 	{
-		display: none;
-	}
-
-	#portfolio li:hover .pointe_bleue2
-	{
-		display: none;
-	}
-
-	#portfolio li:hover .pointe_bleue3
-	{
-		display: none;
-	}
-
-	#portfolio li:hover .pointe_bleue4
-	{
-		display: none;
-	}
-
-	.bandeaux
-	{
-		padding-left: 31px;
-	}
-
-	.bandeaux_texte
-	{
-		bottom: 1%;
-	}
-
-	.cercle
-	{
-		right: 0;
-	}
-
-	.eye
-	{
-		left: 33%;
+		line-height: 55px;
 	}
 
 
@@ -797,39 +748,32 @@ em
 	/*contact*/
 
 
-	#carte
-	{
-		display: none;
-	}
 
 	#contact2
 	{
-		text-align: center;
-		background-color: rgba(198, 199, 201, 0.89);
-    	position: absolute;
-    	padding: 2%;
-    	top: unset;
-    	position: relative;
-    	right: unset;	
-    	width: 40%;
-    	margin-left: 28%;
+		right: 2%;
+		top: 13%;
+		font-size: 1em;
+		width: 30%;
 	}
 
 	#name, #mail, #subject, #message, #send
 	{
-		margin-bottom: 2%;
-		padding: 1%;
+		padding: 3%;
 		border-radius: 5px;
-	}
-
-	#message
-	{
-		width: 80%;
+		margin: 0px;
+		font-size: 1em;
+		width: 95%;
 	}
 
 	.bouton1
 	{
 		padding: 1%;
+	}
+
+	#contact2 h2
+	{
+		margin-top: 5px;
 	}
 }
 
@@ -955,12 +899,11 @@ em
 		max-width: 100%;
 		height: auto;
 		position: relative;
-		display: none;
 	}
 
 	#circle, #circle2
 	{
-		display: none;
+		top: 50%
 	}
 
 	#texte_sur_slider
@@ -1079,12 +1022,23 @@ em
 
 	#menu_secondaire
 	{
-		display: none;
+		font-size: 1.4em;
+		width: 665px;
 	}
 
 	.photo_avec_bandeaux:hover .bandeaux
 	{
-	display: none;
+		display: none;
+	}
+
+	#portfolio nav ul
+	{
+		line-height: 65px;
+	}
+
+	#portfolio nav li
+	{
+		width: 166px;
 	}
 
 	#second
@@ -1118,16 +1072,20 @@ em
 
 
 
-	iframe
+	#filtre_bleue
 	{
 		display: none;
 	}
+
 
 	#contact2
 	{
 		font-size: 2.5em;
 		width: 70%;
-		margin-left: 13%;
+		margin: auto;
+		text-align: center;
+		background-color: rgba(198, 199, 201, 0.89);
+		position: unset;
 	}
 
 	#name, #mail, #subject, #message, #send
